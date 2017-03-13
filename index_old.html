@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Landon Patmore</a>
+                </div>
+
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a> </li>
+                        <li><a href="#">About</a> </li>
+                        <li><a href="#">Contact</a> </li>
+
+
+                        <!-- Drop Down Menu -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">About</a> </li>
+                                <li><a href="#">Contact</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Right Align -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Logout</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li><a href="#">Test 1</a> </li>
+                <li><a href="#">Test 2</a> </li>
+                <li><a href="#">Test 3</a> </li>
+            </ul>
+        </div>
+
+        <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <h1>Grid</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#" class="btn btn-success" id="menu-toggle">Toggle Menu</a>
+                </div>
+                <div class="darkerBG col-sm-4">test</div>
+                <div class="darkestBG col-sm-4">test</div>
+            </div>
+
+
+            <br>
+            <p>This is a mark test...<mark>this is marked!</mark></p>
+
+            <br>
+            <div class="jumbotron" style="background-color: transparent !important;">
+                <h1>Jumbotron</h1>
+                <h2>Test H2</h2>
+                <h3>Test H3</h3>
+                <h4>Test H4</h4>
+                <h5>Test H5</h5>
+                <h6>Test H6</h6>
+            </div>
+
+            <br>
+            <blockquote>
+                <p>This is a blockquote test.</p>
+                <footer>Landon Patmore</footer>
+            </blockquote>
+
+            <br>
+            <h4>This is a list test</h4>
+            <dl>
+                <dt>Indoors</dt>
+                    <dd>- take a nap</dd>
+                    <dd>- watch Netflix</dd>
+                <dt>Outdoors</dt>
+                    <dd>- go back outside</dd>
+            </dl>
+
+            <br>
+            <p>To set the user's weight use <code>setUserWeight(138)</code> with an integer</p>
+
+            <br>
+            <p>For multi line code use the pre tags</p>
+            <pre>
+    public static void main(String args[]){
+        System.out.println("Hello world!");
+    }
+            </pre>
+
+            <br>
+            <p>This is supposed to be keyboard input <kbd>Ctrl+Alt+Del</kbd></p>
+
+            <br>
+            <h4>Built in color classes</h4>
+            <p class="text-muted">Text Muted</p>
+            <p class="text-success">Text Success</p>
+            <p class="text-danger">Text Failure</p>
+
+            <p class="bg-success">Text Success</p>
+            <p class="bg-danger">Text Failure</p>
+
+            <br>
+            <h2>Table Simple</h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Landon Patmore</td>
+                        <td>20</td>
+                        <td>3424</td>
+                    </tr>
+                    <tr>
+                        <td>Jon Jones</td>
+                        <td>45</td>
+                        <td>1232</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Dylan</td>
+                        <td>87</td>
+                        <td>335</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <h2>Table Condensed</h2>
+
+            <table class="table table-condensed">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Points</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Landon Patmore</td>
+                    <td>20</td>
+                    <td>3424</td>
+                </tr>
+                <tr>
+                    <td>Jon Jones</td>
+                    <td>45</td>
+                    <td>1232</td>
+                </tr>
+                <tr>
+                    <td>Bob Dylan</td>
+                    <td>87</td>
+                    <td>335</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <h2>Table Striped</h2>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Points</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Landon Patmore</td>
+                    <td>20</td>
+                    <td>3424</td>
+                </tr>
+                <tr>
+                    <td>Jon Jones</td>
+                    <td>45</td>
+                    <td>1232</td>
+                </tr>
+                <tr>
+                    <td>Bob Dylan</td>
+                    <td>87</td>
+                    <td>335</td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <div class="circle-avatar" style="background-image:url(docs/IMG_0249.JPG)">Me</div>
+
+            <br>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/ClHu3XQBnGU#t=1.172813521"></iframe>
+            </div>
+
+            <br>
+            <h2>Wells are sections with borders and gray backgrounds</h2>
+            <div class="well">Basic Well</div>
+
+            <div class="well well-sm">Small Well</div>
+
+            <div class="alert alert-success">Congratulations!</div>
+
+            <div class="alert alert-danger">Failure!</div>
+
+            <div class="alert alert-info fade in"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> Don't forget to close me!</div>
+
+
+
+
+        </div>
+        </div>
+    </div>
+
+    <!-- Menu Display -->
+    <script>
+        $("#menu-toggle").click(function (e){
+            e.preventDefault();
+            $("#wrapper").toggleClass("menuDisplayed")
+        })
+    </script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
