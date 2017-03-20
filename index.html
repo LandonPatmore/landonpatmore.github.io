@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Website</title>
+    <title>Landon Patmore</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/main.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 </head>
 <body>
-    <div id="background">
-        <div id="background-overlay">
-            <div class="circle-avatar" style="background-image:url(docs/personal_iamge.JPG)"></div>
-            <h1>Landon James Patmore</h1>
-            <h2>Student Software Engineer</h2>
-            <h3>The State University of New York at Oswego</h3>
-            <div class="wrapper">
+    <div class="container-fluid">
+        <div class="circle-avatar" style="background-image:url(docs/personal_iamge.JPG)"></div>
+        <h1>Landon James Patmore</h1>
+        <h2>Student Software Engineer</h2>
+        <h3>The State University of New York at Oswego</h3>
+        <div class="row-fluid">
+            <div class="span4 offset4 text-center">
                 <a href="https://www.github.com/landonp1203">
                     <button type="button" class="btn" style="background-color: transparent">
                         <img src="docs/github_logo.png" height="75">
@@ -30,11 +34,16 @@
                 </a>
             </div>
         </div>
+        <br>
+        <div class="row-fluid">
+            <div class="span4 offset4 text-center">
+                <button type="button" class="btn btn-primary btn-lg outline">Significant Projects</button>
+                <button type="button" class="btn btn-primary btn-lg outline">Technical Skills</button>
+                <button type="button" class="btn btn-primary btn-lg outline">University Classes</button>
+                <button type="button" class="btn btn-primary btn-lg outline">Aspirations</button>
+                <button type="button" class="btn btn-primary btn-lg outline">Contact Information</button>
+            </div>
+        </div>
     </div>
 </body>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
