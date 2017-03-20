@@ -1,23 +1,11 @@
-.darkBG {
-    background-color: #FF9999;
-}
-
-.darkerBG {
-    background-color: #99CCFF;
-}
-
-.darkestBG {
-    background-color: #00CC99;
-}
-
 div.circle-avatar{
     /* make it responsive */
     max-width: 40%;
-    width:40%;
-    height:40%;
+    width:30%;
+    height:30%;
     display:block;
     /* div height to be the same as width*/
-    padding-top:40%;
+    padding-top:30%;
 
     /* make it a circle */
     border-radius:50%;
@@ -41,19 +29,57 @@ div.circle-avatar{
 }
 
 body{
-    background: red url(../docs/background.jpg) no-repeat center center fixed;
     margin: 0px;
+}
+
+#background{
+    background: url(../docs/background.png) center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: auto;
 }
 
-.jumbotron{
+#background-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+h1{
     text-align: center;
     color: white !important;
+    font-size: 40pt !important;
+    white-space: nowrap;
+}
+
+h2{
+    text-align: center;
+    color: white !important;
+    white-space: nowrap;
 }
 
 h3{
+    text-align: center;
+    color: white !important;
+    white-space: nowrap;
     font-style: italic;
 }
 
+.wrapper{
+    text-align: center;
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none !important;
+    box-shadow:none !important;
+}
