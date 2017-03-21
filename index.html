@@ -5,15 +5,29 @@
     <title>Landon Patmore</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">`
 </head>
 <body>
+<nav class="navbar navbar-fixed-top" style="background-color: white !important;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Landon Patmore</a>
+        </div>
+        <ul class="nav navbar-nav nav-center">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#SP">Significant Projects</a></li>
+            <li><a href="#TS">Technical Skills</a></li>
+            <li><a href="#UC">University Classes</a></li>
+            <li><a href="#AP">Aspirations</a></li>
+        </ul>
+    </div>
+</nav>
     <div class="container-fluid">
         <div class="circle-avatar" style="background-image:url(imgs/personal_iamge.JPG)"></div>
         <h1>Landon James Patmore</h1>
         <h2>Student Software Engineer</h2>
         <h3>The State University of New York at Oswego</h3>
-        <div class="row-fluid">
+        <div class="row-fluid space">
             <div class="span4 offset4 text-center">
                 <a href="https://www.github.com/landonp1203">
                     <button type="button" class="btn" style="background-color: transparent">
@@ -27,20 +41,25 @@
                 </a>
             </div>
         </div>
-        <br>
-        <div class="row-fluid">
-            <div class="span4 offset4 text-center">
-                <button type="button" class="btn btn-primary btn-lg outline">Significant Projects</button>
-                <button type="button" class="btn btn-primary btn-lg outline">Technical Skills</button>
-                <button type="button" class="btn btn-primary btn-lg outline">University Classes</button>
-                <button type="button" class="btn btn-primary btn-lg outline">Aspirations</button>
-                <button type="button" class="btn btn-primary btn-lg outline">Contact Information</button>
-            </div>
+        <div class="space" id="SP">
+            <h1>Significant Projects</h1>
         </div>
-    </div>
+        <div class="space" id="TS">
+            <h1>Technical Sckills</h1>
+        </div>
+        <div class="space" id="UC">
+            <h1>University Classes</h1>
+        </div>
+        <div class="space" id="AP">
+            <h1>Aspirations</h1>
+        </div>
 
+    </div>
     <!--CDNS for JQUERY AND BOOTSTRAP-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>

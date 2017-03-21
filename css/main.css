@@ -19,7 +19,7 @@ div.circle-avatar{
     background-size: cover;
 
     /* it is optional, for making this div centered in parent*/
-    margin: 20px auto;
+    margin: 50px auto;
     top: 0;
     left: 0;
     right: 0;
@@ -37,6 +37,7 @@ body{
 }
 
 h1{
+    padding-top: 60px;
     text-align: center;
     color: white !important;
     font-size: 40pt !important;
@@ -84,4 +85,8 @@ h3{
 
 .row{
     color: white !important;
+}
+
+.space{
+    margin-bottom: 100vh;
 }
