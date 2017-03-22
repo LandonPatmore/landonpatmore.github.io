@@ -35,16 +35,11 @@ div.circle-avatar{
     height: 75vh;
 }
 
-html {
-    background: #222326;
-}
-
 body{
     background-color: transparent !important;
 }
 
 h1{
-    padding-top: 60px;
     text-align: center;
     color: white !important;
     font-size: 40pt !important;
@@ -97,6 +92,8 @@ h3{
 
 .space{
     margin-bottom: 100vh;
+    padding-top: 50px;
+    background-clip: content-box !important;
 }
 
 footer .copyright-section {
@@ -168,4 +165,74 @@ footer .footer-logo strong{
 
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.light, .light h1{
+    background-color: rgba(236, 240, 241,1.0);
+    color: #111 !important;
+}
+
+.dark{
+    background-color: #111;
+    color: white !important;
+}
+
+#RM{
+    padding-top: 50px;
+    background-clip: content-box !important;
+}
+
+html {
+    background: url(../imgs/background.png) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: auto;
+}
+
+#background-overlay{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.jumbotron{
+    padding-top: 0px !important;
+    background-color: transparent !important;
+}
+
+.jumbotron h1{
+    font-size: 75px !important;
+}
+
+.jumbotron h2{
+    font-size: 50px;
+}
+
+.jumbotron h3{
+    font-size: 25px;
+}
+
+.glyphicon-align-justify{
+    color: white !important;
+}
+
+li a{
+    color: white !important;
+}
+
+ul.nav a:hover{
+    color: #111 !important;
+}
+
+.navbar-brand{
+    color: white !important;
 }

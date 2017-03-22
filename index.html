@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 
 </head>
 <body>
+<div id="background-overlay">
 <div class="scrolly">
     <div class="topper" id="TOP">
         <nav class="navbar navbar-fixed-top" style="background-color: #111 !important;">
@@ -36,31 +36,30 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding: 0">
             <div class="circle-avatar" style="background-image:url(imgs/personal_image.png)"></div>
-            <h1 id="name">Landon James Patmore</h1>
-            <h2>Student Software Engineer</h2>
-            <h3>The State University of New York at Oswego</h3>
-            <div class="space" style="text-align: center"><a href="#SP"><i class="fa fa-arrow-down ixon"></i></a></div>
+            <div class="jumbotron">
+                <h1 id="name">Landon James Patmore</h1>
+                <h2>Student Software Engineer</h2>
+                <h3 class="space">The State University of New York at Oswego</h3>
+            </div>
 
-            <div class="space" id="SP" style="background-color: #F64747">
+            <div class="space light" id="SP">
                 <h1>Significant Projects</h1>
             </div>
-            <div class="space" id="TS" style="background-color: #F2784B">
+            <div class="space dark" id="TS">
                 <h1>Technical Skills</h1>
-                <div id="languages"></div>
-                <div id="tools"></div>
             </div>
-            <div class="space" id="UC" style="background-color: #9B59B6">
+            <div class="space light" id="UC">
                 <h1>University Classes</h1>
             </div>
-            <div class="space" id="AP" style="background-color: #2574A9">
+            <div class="space dark" id="AP">
                 <h1>Aspirations</h1>
             </div>
-            <div class="space" id="RM" style="background-color: #3FC380">
+            <div class="light" id="RM">
                 <h1>Resume</h1>
             </div>
-            <div class="space" id="CI" style="background-color: #F5AB35">
+            <div class="space dark" id="CI">
                 <h1>Contact Me!</h1>
             </div>
         </div>
@@ -110,12 +109,11 @@
         </a>
     </div>
 </div>
+</div>
 
-<!--CDNS for JQUERY AND BOOTSTRAP-->
+<!--CDNS for JQUERY AND BOOTSTRAP and OTHERS-->
 <script src="https://use.fontawesome.com/fd3fab2b7e.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
