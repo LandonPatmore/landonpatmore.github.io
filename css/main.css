@@ -11,7 +11,7 @@ div.circle-avatar{
     border-radius:50%;
 
     /* Centering on image`s center*/
-    background-position-y: center;
+    background-position-y: -50px;
     background-position-x: center;
     background-repeat: no-repeat;
 
@@ -236,3 +236,4 @@ ul.nav a:hover{
 .navbar-brand{
     color: white !important;
 }
+
