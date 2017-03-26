@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <title>Landon Patmore</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <!--Favicons-->
     <link rel="shortcut icon" href="imgs/favicon/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="imgs/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="196x196" href="imgs/favicon/favicon-192.png">
@@ -28,77 +31,40 @@
     <meta name="msapplication-TileImage" content="imgs/favicon/favicon-144.png">
     <meta name="msapplication-config" content="miscfiles/browserconfig.xml">
 
+    <!--Fonts-->
+
 </head>
 <body>
 <div id="background-overlay">
-<div class="scrolly">
-    <div class="topper" id="TOP">
-        <nav class="navbar navbar-fixed-top" style="background-color: #111 !important;">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle glyphicon glyphicon-align-justify" data-toggle="collapse"
-                            data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#TOP">Landon Patmore</a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#SP">Significant Projects</a></li>
-                        <li><a href="#TS">Technical Skills</a></li>
-                        <li><a href="#UC">University Classes</a></li>
-                        <li><a href="#AP">Aspirations</a></li>
-                        <li><a href="#RM">Resume</a></li>
-                        <li><a href="#CI">Contact Me!</a></li>
-                        <li><a href="#PS">Professional and Social Links</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </nav>
-        <div class="container-fluid" style="padding: 0">
-            <div class="circle-avatar" style="background-image:url(imgs/personal_image.png)"></div>
-            <div class="jumbotron">
-                <h1 id="name">Landon James Patmore</h1>
-                <h2>Student Software Engineer</h2>
-                <h3 class="space">The State University of New York at Oswego</h3>
-            </div>
+    <div class="scrolly">
+        <div class="topper" id="TOP">
+            <nav class="navbar navbar-fixed-top" style="background-color: #111 !important;">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle glyphicon glyphicon-align-justify"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                        </button>
+                        <a class="navbar-brand" href="#TOP">Landon Patmore</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav" id="navbtns">
+                            <li><a href="#SP">Significant Projects</a></li>
+                            <li><a href="#TS">Technical Skills</a></li>
+                            <li><a href="#UC">University Classes</a></li>
+                            <li><a href="#AP">Aspirations</a></li>
+                            <li><a href="#RM">Resume</a></li>
+                            <li><a href="#CI">Contact Me!</a></li>
+                            <li><a href="#PS">Professional and Social Links</a></li>
+                        </ul>
 
-            <div class="space light" id="SP">
-                <h1>Significant Projects</h1>
-            </div>
-            <div class="space dark" id="TS">
-                <h1>Technical Skills</h1>
-            </div>
-            <div class="space light" id="UC">
-                <h1>University Classes</h1>
-            </div>
-            <div class="space dark" id="AP">
-                <h1>Aspirations</h1>
-            </div>
-            <div class="light" id="RM">
-                <h1>Resume</h1>
-            </div>
-            <div class="space dark" id="CI">
-                <h1>Contact Me!</h1>
-            </div>
-        </div>
-        <footer id="PS">
-            <section class="copyright-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="logo">
-                                <h1 class="footer-logo"><strong>Landon</strong> Patmore</h1>
-                            </div>
-                            <div class="social-media">
-                                <ul class="list-inline">
+                        <div class="pull-right">
+                            <ul class="nav navbar-nav">
+                                <ul class="list-inline" style="font-size: 26pt">
                                     <li><a href="https://www.github.com/landonp1203"><i class="fa fa-github"></i></a>
                                     </li>
                                     <li><a href="https://www.linkedin.com/in/landonpatmore"><i
-                                            class="fa fa-linkedin"></i></a>
-                                    </li>
+                                            class="fa fa-linkedin"></i></a></li>
                                     <li><a href="https://www.facebook.com/ljp1203"><i class="fa fa-facebook"></i></a>
                                     </li>
                                     <li><a href="https://www.youtube.com/channel/UC7n_qTzSqOfhmQ0mhCeuSqA"><i
@@ -106,26 +72,67 @@
                                     <li><a href="https://www.instagram.com/ljp1203/"><i class="fa fa-instagram"></i></a>
                                     </li>
                                 </ul>
-                            </div>
-
-                            <div class="copyright">
-                                <p>Copyright &copy;
-                                    <script type="text/javascript">
-                                        var d = new Date()
-                                        document.write(d.getFullYear())
-                                    </script>. Landon Patmore. All Rights Reserved.
-                                </p>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section><!--  End of copyright and social media section -->
-        </footer> <!--  End of footer -->
-        <a href="#TOP">
-            <button class="fa fa-arrow-up" id="myBtn"></button>
-        </a>
+            </nav>
+
+
+            <div class="container-fluid" style="padding: 0">
+                <div class="circle-avatar" style="background-image:url(imgs/personal_image.png)"></div>
+                <div class="jumbotron">
+                    <h1 id="name">Landon James Patmore</h1>
+                    <h2>Student Software Engineer</h2>
+                    <h3 class="space">The State University of New York at Oswego</h3>
+                </div>
+
+                <div class="space light" id="SP">
+                    <h1>Significant Projects</h1>
+                </div>
+                <div class="space dark" id="TS">
+                    <h1>Technical Skills</h1>
+                </div>
+                <div class="space light" id="UC">
+                    <h1>University Classes</h1>
+                </div>
+                <div class="space dark" id="AP">
+                    <h1>Aspirations</h1>
+                </div>
+                <div class="light" id="RM">
+                    <h1>Resume</h1>
+                </div>
+                <div class="space dark" id="CI">
+                    <h1>Contact Me!</h1>
+                </div>
+            </div>
+            <footer id="PS">
+                <section class="copyright-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="logo">
+                                    <h1 class="footer-logo"><strong>Landon</strong> Patmore</h1>
+                                </div>
+                                <div class="copyright">
+                                    <p>Copyright &copy;
+                                        <script type="text/javascript">
+                                            var d = new Date()
+                                            document.write(d.getFullYear())
+                                        </script>
+                                        . Landon Patmore. All Rights Reserved.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--  End of copyright and social media section -->
+            </footer> <!--  End of footer -->
+            <a href="#TOP">
+                <button class="fa fa-arrow-up" id="myBtn"></button>
+            </a>
+        </div>
     </div>
-</div>
 </div>
 
 <!--CDNS for JQUERY AND BOOTSTRAP and OTHERS-->

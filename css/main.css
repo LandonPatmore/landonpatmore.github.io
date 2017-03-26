@@ -11,7 +11,7 @@ div.circle-avatar{
     border-radius:50%;
 
     /* Centering on image`s center*/
-    background-position-y: -50px;
+    background-position-y: center;
     background-position-x: center;
     background-repeat: no-repeat;
 
@@ -110,27 +110,16 @@ footer .copyright-section .social-media {
 footer .copyright-section .social-media ul {
     text-align: center;
 }
-footer .copyright-section .social-media ul li a {
-    display: block;
-    color: #6BB9F0;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    border: 1px solid #6BB9F0;
-    font-size: 30px;
-}
-footer .copyright-section .social-media ul li a:hover {
-    background: #6BB9F0;
-    color: #fff;
-}
+
 footer .copyright-section .copyright {
     margin-top: 30px;
 }
+
 footer .copyright-section .copyright p {
     text-align: center;
     color: #666;
 }
+
 footer .footer-logo{
     margin: 0;
     padding: 0;
@@ -230,10 +219,13 @@ li a{
 }
 
 ul.nav a:hover{
-    color: #111 !important;
+    color: #6BB9F0 !important;
 }
 
 .navbar-brand{
     color: white !important;
 }
 
+.right-button{
+    float: right;
+}
