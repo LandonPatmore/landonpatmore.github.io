@@ -55,7 +55,6 @@
                             <li><a href="#AP">Aspirations</a></li>
                             <li><a href="#RM">Resume</a></li>
                             <li><a href="#CI">Contact Me!</a></li>
-                            <li><a href="#PS">Professional and Social Links</a></li>
                         </ul>
 
                         <div class="pull-right">
@@ -80,11 +79,17 @@
 
 
             <div class="container-fluid" style="padding: 0">
-                <div class="circle-avatar" style="background-image:url(imgs/personal_image.png)"></div>
-                <div class="jumbotron">
-                    <h1 id="name">Landon James Patmore</h1>
-                    <h2>Student Software Engineer</h2>
-                    <h3 class="space">The State University of New York at Oswego</h3>
+                <div class="row" style="margin: 80px">
+                    <div class="col-xs-4 text-center" style="height: 500px;">
+                        <div class="circle-avatar centeredDiv" style="background-image: url(imgs/personal_image.png);"></div>
+                    </div>
+                    <div class="col-xs-8 text-center" style="height: 500px;">
+                        <div class="jumbotron centeredDiv">
+                            <h1>Landon James Patmore</h1>
+                            <h2>Student Software Engineer</h2>
+                            <h3>The State University of New York at Oswego</h3>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="space light" id="SP">
@@ -99,14 +104,98 @@
                 <div class="space dark" id="AP">
                     <h1>Aspirations</h1>
                 </div>
-                <div class="light" id="RM">
+                <div class="space light" id="RM">
                     <h1>Resume</h1>
+                    <div style="vertical-align: middle; text-align: center">
+                        <img src="imgs/ResumeImage.png" height="670" width="430"/>
+                        <br>
+                        <br>
+                        <a href="Downloadable/Resume-SE.pdf" download="LandonPatmore-Resume">
+                            <button class="btn btn-success rBtn">Download</button>
+                        </a>
+                        <a href="Downloadable/Resume-SE.pdf" target="_blank">
+                            <button class="btn btn-danger rBtn">View</button>
+                        </a>
+                        <br>
+                        <br>
+                    </div>
                 </div>
-                <div class="space dark" id="CI">
+                <div class="dark" id="CI">
                     <h1>Contact Me!</h1>
+                    <div class="container">
+                        <br>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="well well-sm">
+                                    <form>
+                                        <div class="row" style="color: #222326 !important;">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name">
+                                                        Name</label>
+                                                    <input type="text" class="form-control" id="name"
+                                                           placeholder="Enter name" required="required"/>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">
+                                                        Email Address</label>
+                                                    <div class="input-group">
+                                <span class="input-group-addon"><span class="fa fa-envelope"></span>
+                                </span>
+                                                        <input type="email" class="form-control" id="email"
+                                                               placeholder="Enter email" required="required"/></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="subject">
+                                                        Subject</label>
+                                                    <select id="subject" name="subject" class="form-control"
+                                                            required="required">
+                                                        <option value="product">Question</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name">
+                                                        Message</label>
+                                                    <textarea name="message" id="message" class="form-control" rows="9"
+                                                              cols="25" required="required"
+                                                              placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-primary pull-right"
+                                                        id="btnContactUs">
+                                                    Send Message
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <form>
+                                    <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                                    <address>
+                                        <strong>Twitter, Inc.</strong><br>
+                                        795 Folsom Ave, Suite 600<br>
+                                        San Francisco, CA 94107<br>
+                                        <abbr title="Phone">
+                                            P:</abbr>
+                                        (123) 456-7890
+                                    </address>
+                                    <address>
+                                        <strong>Full Name</strong><br>
+                                        <a href="mailto:#">first.last@example.com</a>
+                                    </address>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <footer id="PS">
+            <footer>
                 <section class="copyright-section">
                     <div class="container">
                         <div class="row">
@@ -135,7 +224,7 @@
     </div>
 </div>
 
-<!--CDNS for JQUERY AND BOOTSTRAP and OTHERS-->
+<!--CDNS for JQUERY AND BOOTSTRAP AND OTHERS-->
 <script src="https://use.fontawesome.com/fd3fab2b7e.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

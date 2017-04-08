@@ -1,11 +1,10 @@
 div.circle-avatar{
     /* make it responsive */
-    max-width: 30%;
-    width:30%;
-    height:30%;
-    display:block;
+    max-width: 80%;
+    width:80%;
+    height:80%;
     /* div height to be the same as width*/
-    padding-top:30%;
+    padding-top:80%;
 
     /* make it a circle */
     border-radius:50%;
@@ -19,13 +18,19 @@ div.circle-avatar{
     background-size: cover;
 
     /* it is optional, for making this div centered in parent*/
-    margin: 80px auto;
-    top: 0;
+    margin: 0px auto;
     left: 0;
     right: 0;
     bottom: 0;
 
     border: 2pt solid white;
+}
+
+.centeredDiv{
+    top: 50% !important;
+    position: relative !important;
+    transform: translateY(-50%) !important;
+
 }
 
 #languages{
@@ -43,10 +48,6 @@ h1{
     text-align: center;
     color: white !important;
     font-size: 40pt !important;
-}
-
-#name{
-    padding-top: 0px;
 }
 
 h2{
@@ -199,15 +200,15 @@ html {
 }
 
 .jumbotron h1{
-    font-size: 75px !important;
+    font-size: 50pt !important;
 }
 
 .jumbotron h2{
-    font-size: 50px;
+    font-size: 30pt;
 }
 
 .jumbotron h3{
-    font-size: 25px;
+    font-size: 25pt;
 }
 
 .glyphicon-align-justify{
@@ -228,4 +229,11 @@ ul.nav a:hover{
 
 .right-button{
     float: right;
+}
+
+.rBtn{
+    font-size: 20pt !important;
+    height: 50px !important;
+    width: 185px !important;
+    margin: 15px;
 }

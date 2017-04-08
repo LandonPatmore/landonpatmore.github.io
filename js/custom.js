@@ -7,7 +7,7 @@ $('.space').localScroll();
 $('.scrolly').localScroll();
 
 $(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+    if( $(e.target).is('a') && $(e.target).attr('class') !== 'dropdown-toggle' ) {
         $(this).collapse('hide');
     }
 });
@@ -16,7 +16,7 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
