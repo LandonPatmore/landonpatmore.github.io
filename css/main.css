@@ -1,10 +1,10 @@
 div.circle-avatar{
     /* make it responsive */
-    max-width: 80%;
-    width:80%;
-    height:80%;
+    max-width:30%;
+    width:30%;
+    height:30%;
     /* div height to be the same as width*/
-    padding-top:80%;
+    padding-top:30%;
 
     /* make it a circle */
     border-radius:50%;
@@ -26,152 +26,6 @@ div.circle-avatar{
     border: 2pt solid white;
 }
 
-.centeredDiv{
-    top: 50% !important;
-    position: relative !important;
-    transform: translateY(-50%) !important;
-
-}
-
-#languages{
-    height: 75vh;
-}
-#tools{
-    height: 75vh;
-}
-
-body{
-    background-color: transparent !important;
-}
-
-h1{
-    text-align: center;
-    color: white !important;
-    font-size: 40pt !important;
-}
-
-h2{
-    text-align: center;
-    color: white !important;
-}
-
-h3{
-    text-align: center;
-    color: white !important;
-    font-style: italic;
-}
-
-.btn.outline {
-    background: none;
-    padding: 12px 22px;
-    margin: 15px;
-}
-
-.btn-primary.outline {
-    border: 2px solid white;
-    color: white;
-}
-
-.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
-    color: white;
-    border-color: white;
-}
-.btn-primary.outline:active, .btn-primary.outline.active {
-    border-color: white;
-    color: white;
-}
-
-.btn:focus,.btn:active:focus,.btn.active:focus,
-.btn.focus,.btn:active.focus,.btn.active.focus {
-    outline: none !important;
-    box-shadow:none !important;
-}
-
-.row{
-    color: white !important;
-}
-
-.space{
-    margin-bottom: 100vh;
-    padding-top: 50px;
-    background-clip: content-box !important;
-}
-
-footer .copyright-section {
-    background: #111;
-    padding: 30px 0;
-}
-footer .copyright-section .logo {
-    max-width: 300px;
-    margin: 0 auto;
-}
-footer .copyright-section .social-media {
-    margin-top: 30px;
-}
-footer .copyright-section .social-media ul {
-    text-align: center;
-}
-
-footer .copyright-section .copyright {
-    margin-top: 30px;
-}
-
-footer .copyright-section .copyright p {
-    text-align: center;
-    color: #666;
-}
-
-footer .footer-logo{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 36px;
-    text-transform: uppercase;
-    color: #999;
-}
-footer .footer-logo strong{
-    color: #6BB9F0;
-}
-
-.fa-arrow-down{
-    color: white;
-    font-size: 50pt !important;
-    padding: 25px;
-}
-
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #111; /* Set a background color */
-    color: white; /* Text color */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-}
-
-#myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-}
-
-.light, .light h1{
-    background-color: rgba(236, 240, 241,1.0);
-    color: #111 !important;
-}
-
-.dark{
-    background-color: #111;
-    color: white !important;
-}
-
-#RM{
-    padding-top: 50px;
-    background-clip: content-box !important;
-}
-
 html {
     background: url(../imgs/background.png) center center no-repeat fixed;
     -webkit-background-size: cover;
@@ -184,56 +38,15 @@ html {
     z-index: auto;
 }
 
-#background-overlay{
-    position: relative;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    z-index: auto;
-    background-color: rgba(0,0,0,0.5);
+.row_padding{
+    padding: 20px;
+    font-size: 75px !important;
 }
 
-.jumbotron{
-    padding-top: 0px !important;
-    background-color: transparent !important;
+a {
+    color: white;
 }
 
-.jumbotron h1{
-    font-size: 50pt !important;
-}
-
-.jumbotron h2{
-    font-size: 30pt;
-}
-
-.jumbotron h3{
-    font-size: 25pt;
-}
-
-.glyphicon-align-justify{
-    color: white !important;
-}
-
-li a{
-    color: white !important;
-}
-
-ul.nav a:hover{
-    color: #6BB9F0 !important;
-}
-
-.navbar-brand{
-    color: white !important;
-}
-
-.right-button{
-    float: right;
-}
-
-.rBtn{
-    font-size: 20pt !important;
-    height: 50px !important;
-    width: 185px !important;
-    margin: 15px;
+a:hover {
+    color: #222326;
 }

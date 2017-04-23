@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!--Favicons-->
     <link rel="shortcut icon" href="imgs/favicon/favicon.ico">
@@ -34,197 +34,31 @@
     <!--Fonts-->
 
 </head>
-<body>
-<div id="background-overlay">
-    <div class="scrolly">
-        <div class="topper" id="TOP">
-            <nav class="navbar navbar-fixed-top" style="background-color: #111 !important;">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle glyphicon glyphicon-align-justify"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse">
-                        </button>
-                        <a class="navbar-brand" href="#TOP">Landon Patmore</a>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav" id="navbtns">
-                            <li><a href="#SP">Significant Projects</a></li>
-                            <li><a href="#TS">Technical Skills</a></li>
-                            <li><a href="#UC">University Classes</a></li>
-                            <li><a href="#AP">Aspirations</a></li>
-                            <li><a href="#RM">Resume</a></li>
-                            <li><a href="#CI">Contact Me!</a></li>
-                        </ul>
+<body style="background-color: transparent">
 
-                        <div class="pull-right">
-                            <ul class="nav navbar-nav">
-                                <ul class="list-inline" style="font-size: 26pt">
-                                    <li><a href="https://www.github.com/landonp1203"><i class="fa fa-github"></i></a>
-                                    </li>
-                                    <li><a href="https://www.linkedin.com/in/landonpatmore"><i
-                                            class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="https://www.facebook.com/ljp1203"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a href="https://www.youtube.com/channel/UC7n_qTzSqOfhmQ0mhCeuSqA"><i
-                                            class="fa fa-youtube-play"></i></a></li>
-                                    <li><a href="https://www.instagram.com/ljp1203/"><i class="fa fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
-            <div class="container-fluid" style="padding: 0">
-                <div class="circle-avatar" style="background-image:url(imgs/personal_image.png)"></div>
-                <div class="jumbotron">
-                    <h1>**WORK IN PROGRESS**</h1>
-                    <h1 id="name">Landon James Patmore</h1>
-                    <h2>Student Software Engineer</h2>
-                    <h3 class="space">The State University of New York at Oswego</h3>
-                </div>
-
-                <div class="space light" id="SP">
-                    <h1>Significant Projects</h1>
-                </div>
-                <div class="space dark" id="TS">
-                    <h1>Technical Skills</h1>
-                </div>
-                <div class="space light" id="UC">
-                    <h1>University Classes</h1>
-                </div>
-                <div class="space dark" id="AP">
-                    <h1>Aspirations</h1>
-                </div>
-                <div class="space light" id="RM">
-                    <h1>Resume</h1>
-                    <div style="vertical-align: middle; text-align: center">
-                        <img src="imgs/ResumeImage.png" height="670" width="430"/>
-                        <br>
-                        <br>
-                        <a href="Downloadable/Resume-SE.pdf" download="LandonPatmore-Resume">
-                            <button class="btn btn-success rBtn">Download</button>
-                        </a>
-                        <a href="Downloadable/Resume-SE.pdf" target="_blank">
-                            <button class="btn btn-danger rBtn">View</button>
-                        </a>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-                <div class="dark" id="CI">
-                    <h1>Contact Me!</h1>
-                    <div class="container">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="well well-sm">
-                                    <form>
-                                        <div class="row" style="color: #222326 !important;">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="name">
-                                                        Name</label>
-                                                    <input type="text" class="form-control" id="name"
-                                                           placeholder="Enter name" required="required"/>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="email">
-                                                        Email Address</label>
-                                                    <div class="input-group">
-                                <span class="input-group-addon"><span class="fa fa-envelope"></span>
-                                </span>
-                                                        <input type="email" class="form-control" id="email"
-                                                               placeholder="Enter email" required="required"/></div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="subject">
-                                                        Subject</label>
-                                                    <select id="subject" name="subject" class="form-control"
-                                                            required="required">
-                                                        <option value="product">Question</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="name">
-                                                        Message</label>
-                                                    <textarea name="message" id="message" class="form-control" rows="9"
-                                                              cols="25" required="required"
-                                                              placeholder="Message"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <button type="submit" class="btn btn-primary pull-right"
-                                                        id="btnContactUs">
-                                                    Send Message
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <form>
-                                    <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
-                                    <address>
-                                        <strong>Twitter, Inc.</strong><br>
-                                        795 Folsom Ave, Suite 600<br>
-                                        San Francisco, CA 94107<br>
-                                        <abbr title="Phone">
-                                            P:</abbr>
-                                        (123) 456-7890
-                                    </address>
-                                    <address>
-                                        <strong>Full Name</strong><br>
-                                        <a href="mailto:#">first.last@example.com</a>
-                                    </address>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <footer>
-                <section class="copyright-section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="logo">
-                                    <h1 class="footer-logo"><strong>Landon</strong> Patmore</h1>
-                                </div>
-                                <div class="copyright">
-                                    <p>Copyright &copy;
-                                        <script type="text/javascript">
-                                            var d = new Date()
-                                            document.write(d.getFullYear())
-                                        </script>
-                                        . Landon Patmore. All Rights Reserved.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section><!--  End of copyright and social media section -->
-            </footer> <!--  End of footer -->
-            <a href="#TOP">
-                <button class="fa fa-arrow-up" id="myBtn"></button>
-            </a>
-        </div>
+<div class="container-fluid"?>
+    <div>
+        <div class="circle-avatar" style="background-image: url(imgs/personal_image.png)"></div>
+    </div>
+    <div class="text-center" style="color: white">
+        <h1>Landon James Patmore</h1>
+        <h2>Software Engineering Student</h2>
+        <h3 style="font-style: italic">The State Univeristy of New York At Oswego</h3>
+    </div>
+    <div class="row-fluid text-center" style="color: white !important;">
+        <a href="Downloadable/Resume-SE.pdf" target="_blank"><i class="fa fa-file-text-o row_padding" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/landonpatmore"><i class="fa fa-linkedin-square row_padding" aria-hidden="true"></i></a>
+        <a href="https://github.com/landonp1203/"><i class="fa fa-github row_padding" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/ljp1203/"><i class="fa fa-instagram row_padding" aria-hidden="true"></i></a>
+        <a href="mailto:landon.patmore@gmail.com?Subject=Hey%20There!"><i class="fa fa-envelope-o row_padding" aria-hidden="true"></i></a>
     </div>
 </div>
+
+
 
 <!--CDNS for JQUERY AND BOOTSTRAP AND OTHERS-->
 <script src="https://use.fontawesome.com/fd3fab2b7e.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script>
-<script src="js/custom.js"></script>
 </body>
 </html>
