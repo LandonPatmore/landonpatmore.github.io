@@ -26,7 +26,7 @@ div.circle-avatar{
     border: 2pt solid white;
 }
 
-html {
+html{
     background: url(../imgs/background.png) center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -37,6 +37,13 @@ html {
     height: 100vh;
     z-index: auto;
 }
+
+#hoverlay{
+    position: relative;
+    z-index: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
 
 .row_padding{
     padding: 20px;
