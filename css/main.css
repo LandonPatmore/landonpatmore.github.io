@@ -48,9 +48,9 @@ html{
 }
 
 
-.row_padding{
-    padding: 20px;
+.row_icons{
     font-size: 75px !important;
+    padding-top: 10px;
 }
 
 a {
@@ -58,5 +58,5 @@ a {
 }
 
 a:hover {
-    color: #222326;
+    color: #5A5C61;
 }
