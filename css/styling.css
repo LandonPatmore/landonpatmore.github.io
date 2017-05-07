@@ -31,7 +31,7 @@ html{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    position: fixed;
+    position: relative;
     top: 0;
     bottom: 0;
     height: 100vh;
@@ -50,7 +50,7 @@ html{
 
 
 .row_icons{
-    font-size: 75px !important;
+    font-size: 50px !important;
     padding-top: 10px;
 }
 
