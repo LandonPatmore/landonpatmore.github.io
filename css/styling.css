@@ -1,10 +1,10 @@
 div.circle-avatar{
     /* make it responsive */
-    max-width:40%;
-    width:40%;
-    height:40%;
+    max-width:30%;
+    width:30%;
+    height:30%;
     /* div height to be the same as width*/
-    padding-top:40%;
+    padding-top:30%;
 
     /* make it a circle */
     border-radius:50%;
@@ -27,7 +27,7 @@ div.circle-avatar{
 }
 
 html{
-    background: url(../imgs/background-min.png) center center no-repeat fixed;
+    background: url(../imgs/background.jpg) center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -44,8 +44,16 @@ html{
 }
 
 .row_icons{
-    font-size: 100px;
+    font-size: 25pt;
     padding-top: 25px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -53,5 +61,11 @@ a {
 }
 
 a:hover {
-    color: #414141;
+    color: gray;
+}
+
+p {
+    color: white;
+    font-size: 14pt;
+    font-family: 'Roboto', sans-serif;
 }
