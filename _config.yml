@@ -1,5 +1,5 @@
 layout: sidebar
-style: light
+style: dark
 
 plugins:
   - jekyll-octicons
@@ -11,33 +11,24 @@ permalink: /:year/:month/:day/:title/
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: ""
       type: "posts"
     values:
       layout: "post"
 
 projects:
   sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
   limit: 9
   exclude:
     forks: true
     projects:
-    # - repo-name
+    # - repo-name (repos that should be excluded from the listing)
 
-# social_media:
-  # behance: your_username
-  # dribbble: your_username
-  # facebook: your_username
-  # linkedin: your_username
-  # medium: @your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  # twitter: your_username
-  # youtube: your_username
-  # vk: your_username
+social_media:
+  linkedin: landonpatmore
+  stackoverflow: 6562312
+  twitter: landon_patmore
+  youtube: channel/UC7n_qTzSqOfhmQ0mhCeuSqA
 
 topics:
   - name: CSS
