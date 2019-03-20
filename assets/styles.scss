@@ -78,3 +78,39 @@ p {
     max-height: 100%;
   }
 }
+
+// fixes issue with last social media icon pushing the entire flex off-center on masthead.html page
+.d-flex {
+  .smedia-icon {
+    path {
+      transition: fill .3s ease;
+    }
+    :last-child {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+#linkedin {
+  :hover {
+    fill: #0077b5;
+  }
+}
+
+#stackoverflow {
+  :hover {
+    fill: #f48024;
+  }
+}
+
+#twitter {
+  :hover {
+    fill: #38A1F3;
+  }
+}
+
+#youtube {
+  :hover {
+    fill: #ff0000;
+  }
+}
