@@ -36,7 +36,6 @@
 </div>
 {% endcapture %}
 
-{% if site.layout == 'stacked' %}
 <div class="container-lg py-6 p-responsive text-center">
   {% include masthead.html metadata=false %}
 
@@ -49,42 +48,13 @@
     <p class="{% if site.style == 'dark' %}text-white{% else %}text-blue{% endif %} mb-5">Published
       {{ page.date | date: "%b %d, %Y"}}</p>
     {{ post_body }}
+
+    <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+    <link rel="stylesheet" type="text/css"
+      href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+    <script type="text/javascript"
+      id="hcb">if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"), h = "https://www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24M8INDxNK7spZV0KUWmrYn1" + "&opts=16862&num=10&ts=1553116284654"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })();</script>
   </div>
 </div>
-{% else %}
-<div class="d-md-flex height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
-  <div
-    class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
-    {% include masthead.html metadata=true %}
-  </div>
-
-  <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light"
-    {% if site.style == 'dark' %}style="background-color: #2f363d !important" {% endif %}>
-    <div class="mx-auto" style="max-width: 900px;">
-      <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
-        <div class="f4 {% if site.style == 'dark' %}text-white{% endif %}">
-          <p class="f5"><a href="{{ site.url }}{{ site.baseurl | append:'/' }}"
-              class="d-flex flex-items-center {% if site.style == 'dark' %}text-white{% endif %}">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Home %}Home</a>
-          </p>
-          <h1 class="f00-light lh-condensed">{{ page.title }}</h1>
-          <p class="f4">{{ page.description }}</p>
-          <div class="post-tags">
-            {% for item in page.tags %}
-            <div class="Box tag">
-              #{{item | downcase}}
-            </div>
-            {% endfor %}
-          </div>
-          <p class="{% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %} mb-5">Published
-            {{ page.date | date: "%b %d, %Y"}}</p>
-          {{ post_body }}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}
-
-<div class="commentbox"></div>
 
 {% include footer.html %}

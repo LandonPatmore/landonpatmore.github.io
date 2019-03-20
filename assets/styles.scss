@@ -116,12 +116,3 @@ p {
 li.smedia-icon:hover {
   transform: scale(1.1)
 }
-
-#hire-btn {
-  transition: all 0.2s ease;
-
-  &:hover {
-    opacity: 1.0;
-    transform: scale(1.5)
-  }
-}
