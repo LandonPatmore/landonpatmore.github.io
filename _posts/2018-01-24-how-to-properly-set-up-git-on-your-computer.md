@@ -1,8 +1,8 @@
 ---
-title: How to properly set up Git on your computer!
+title: How to properly set up Git on your computer
 published: true
 description: Learn how to easily and effectively setup Git on your computer to easily make forking, pushing, and pulling easy without having to worry!
-tags: Git Github Setup
+tags: git github setup
 original_url: https://dev.to/landonp1203/how-to-properly-set-up-git-on-your-computer-33eo
 ---
 
@@ -110,4 +110,3 @@ Since some of you may not be super comfortable using just the terminal for Git o
 Hope this helped! Any questions, feel free to ask me!
 
 Happy Hacking!
-- Landon
