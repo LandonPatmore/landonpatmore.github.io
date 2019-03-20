@@ -7,11 +7,12 @@
       </a>
     </h1>
   </div>
-  <div class="post-tags">
+  <div
+    class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %} mt-1 mt-md-3{% endif %}">
     {% for item in post.tags %}
-    <div class="Box tag">
+    <button class="btn btn-sm btn-outline mr-1 mb-1 post-tag" aria-label="#{{ item }}" disabled>
       #{{item | downcase}}
-    </div>
+    </button>
     {% endfor %}
   </div>
   <div class="text-gray mb-2 ws-normal">{{ post.date | date: "%b %d, %Y"}}</div>
