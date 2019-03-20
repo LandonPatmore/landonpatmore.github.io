@@ -1,6 +1,12 @@
 <footer>&copy;
   <script>document.write(new Date().getFullYear());</script>, Landon Patmore. All rights reserved.
 </footer>
+
+{% if page.path contains '_posts' %}
+<script>
+  commentBox('5696446112202752-proj');
+</script>
+{% endif %}
 </body>
 
 </html>

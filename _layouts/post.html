@@ -20,7 +20,7 @@
   <h3 class="text-gray-dark mr-3 mr-sm-0">Share</h3>
   <ul class="d-flex d-sm-block list-style-none">
     {% for service in shareable_social_media %}
-    <li class="mt-sm-3">
+    <li class="mt-sm-3 smedia-icon">
       <a href="{{ service.share_url_prefix }}{{ page.url | prepend: site.url | prepend: site.baseurl | url_encode }}"
         title="Share on {{ service.name }}" class="d-flex flex-items-center">
         <div class="mr-1" style="width:32px; fill: #{{service.color}}">{{ service.icon_svg }}</div><span
@@ -67,7 +67,7 @@
               class="d-flex flex-items-center {% if site.style == 'dark' %}text-white{% endif %}">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Home %}Home</a>
           </p>
           <h1 class="f00-light lh-condensed">{{ page.title }}</h1>
-          <h1 class="f4">{{ page.description }}</h1>
+          <p class="f4">{{ page.description }}</p>
           <div class="post-tags">
             {% for item in page.tags %}
             <div class="Box tag">
@@ -84,5 +84,7 @@
   </div>
 </div>
 {% endif %}
+
+<div class="commentbox"></div>
 
 {% include footer.html %}
