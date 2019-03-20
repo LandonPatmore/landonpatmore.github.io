@@ -1,4 +1,4 @@
-layout: sidebar
+layout: stackedZZ
 style: light
 
 plugins:
@@ -9,7 +9,6 @@ plugins:
 permalink: /:year/:month/:day/:title/
 
 defaults:
-  -
     scope:
       path: ""
       type: "posts"
