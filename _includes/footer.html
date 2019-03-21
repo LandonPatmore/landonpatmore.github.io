@@ -1,6 +1,10 @@
 <footer>&copy;
   <script>document.write(new Date().getFullYear());</script>, Landon Patmore. All rights reserved.
 </footer>
+
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
 </body>
 
 </html>

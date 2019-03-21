@@ -43,12 +43,23 @@
   vertical-align: middle;
 }
 
-.article {
+#markdownPage {
+  h4 {
+    margin-bottom: 0;
+    color: #79b8ff;
+  }
+}
+
+.markdown {
   h1,
   h2,
   h3,
-  h4,
-  .highlight {
+  h4 {
+    margin-bottom: 16px;
+    color: #0366d6;
+  }
+
+  ul, .highlight {
     margin-bottom: 16px;
   }
 

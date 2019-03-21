@@ -53,21 +53,27 @@
   {% endif %}
   {% if user.hireable %}
   <a href="mailto:{{ user.email }}?subject=I'd like to discuss hiring you!&body=Hi Landon,">
-    <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2" id="hire-btn">Available for hire</span>
+    <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2" id="hire-btn">Available for
+      hire</span>
   </a>
   {% endif %}
 
   <div
     class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %}flex-justify-center mt-1 mt-md-3{% endif %}">
-    {% if site.static_files %}
-    {% for file in site.static_files %}
-    {% if file.basename contains 'resume' %}
-    <a href="{{ file.path }}">
-      <button class="btn btn-outline mb-1" type="button" aria-label="{{ link[0] }}">Resume</button>
+    <a href="/">
+      <button class="btn btn-outline mr-3 mb-1" type="button" aria-label="Home">Home</button>
     </a>
-    {% endif %}
-    {% endfor %}
-    {% endif %}
+    <a href="/resume">
+      <button class="btn btn-outline mr-3 mb-1" type="button" aria-label="Resume">Resume</button>
+    </a>
+    <a href="/blog">
+      <button class="btn btn-outline mr-3 mb-1" type="button" aria-label="Blog">Blog</button>
+    </a>
+    {% unless jekyll.environment == 'production' %}
+    <a href="/about">
+      <button class="btn btn-outline mb-1" type="button" aria-label="About">About</button>
+    </a>
+    {% endunless%}
   </div>
 </div>
 {% endif %}
